@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <title>Nyayapravah</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    />
+    <!-- Font Awesome Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+    />
+    <!-- Custom CSS -->
+    <style>
+      body {
+        font-family: "Times New Roman", Times, serif;
+      }
+
+      .body-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        max-width: 800px; /* Ideal size for the container */
+        margin: auto;
+        padding: 20px;
+        background-color: #f8f9fa; /* Optional: Add a light background color */
+        border: 1px solid #ddd; /* Optional: Add a border for separation */
+      }
+
+      .upper-header {
+        background-color: #333;
+        color: #fff;
+        padding: 10px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      #currentDate {
+        color: #fff;
+        font-size: 14px;
+        margin-right: auto;
+        padding: 0 20px;
+      }
+
+      .upper-header a {
+        color: #fff;
+        text-decoration: none;
+        transition: background-color 0.3s;
+      }
+
+      .upper-header a:hover {
+        background-color: orange;
+        color: #fff;
+      }
+
+      .logo-container {
+        background-color: #fff;
+        text-align: center;
+        padding: 20px;
+      }
+
+      .navbar-nav {
+        margin: auto;
+      }
+
+      .navbar {
+        background-color: #343a40;
+      }
+
+      .navbar-nav .nav-link {
+        color: #fff;
+        padding: 10px 15px;
+        text-align: center;
+        font-size: 16px;
+        transition: background-color 0.3s, color 0.3s;
+      }
+
+      .navbar-nav .nav-link:hover {
+        background-color: orange;
+        color: #fff;
+      }
+
+      .body-container {
+        padding: 20px;
+      }
+
+      .footer {
+        background-color: #343a40;
+        color: #fff;
+        padding: 10px;
+        text-align: center;
+      }
+
+      .logo {
+        width: 200px;
+        height: auto;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Upper Header -->
+    <div class="upper-header">
+      <div class="social-links">
+        <span id="currentDate"></span>
+        <div>
+          <a href="https://www.facebook.com/adhivakta.parishad.58"
+            >Facebook <i class="fab fa-facebook"></i
+          ></a>
+          |
+          <a href="https://www.instagram.com/adhivaktap"
+            >Instagram <i class="fab fa-instagram"></i
+          ></a>
+          |
+          <a href="https://www.linkedin.com/in/adhivaktap"
+            >LinkedIn <i class="fab fa-linkedin"></i
+          ></a>
+          |
+          <a href="https://www.youtube.com/@AdhivaktaParishad"
+            >YouTube <i class="fab fa-youtube"></i
+          ></a>
+          |
+          <a href="https://twitter.com/AdhivaktaP"
+            >Twitter <i class="fab fa-twitter"></i
+          ></a>
+        </div>
+      </div>
+    </div>
+    <!-- Logo Container -->
+    <div class="logo-container">
+      <div class="container">
+        <div class="row justify-content-around">
+          <div class="col-md-3 text-center">
+            <img src="images/logo.png" alt="Logo 1" class="img-fluid logo" />
+          </div>
+          <div class="col-md-6 text-center">
+            <img
+              src="images/logo101.png"
+              style="width: 600px !important"
+              alt="Logo 2"
+              class="img-fluid logo"
+            />
+          </div>
+          <div class="col-md-3 text-center">
+            <img
+              src="images/logo_BHMAA.jpg"
+              alt="Logo 3"
+              class="img-fluid logo"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item active">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="editorialboard.html">Editorial Board</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="callForArticles.html"
+              >Call for Articles</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="ecopy.html">Read Ecopy</a>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="#">About Us</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Contact Us</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Body Content -->
+
+    <!-- Footer -->
+    <div class="footer">
+      <div class="container">
+        <!-- <p>Visitors Count: <span id="liveVisitors">0</span></p> -->
+        <p>
+          <a href="#">Privacy Policy</a> | &copy; 2024 Nyayapravah || Adhivakta
+          Parishad
+        </p>
+        <p class="disclaimer" style="text-align: center">
+          <strong>Disclaimer:</strong> Any opinions or views on any contemporary
+          or past topics, issues, or developments expressed by third parties,
+          whether in abstract or in interviews, are not necessarily shared by
+          the editor/publisher. All disputes are subject to the exclusive
+          jurisdiction of competent courts and forums in Delhi/New Delhi only.
+        </p>
+      </div>
+    </div>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <!-- Custom JS for live visitors count -->
+    <script>
+      document.getElementById("currentDate").innerHTML =
+        new Date().toLocaleDateString("en-US", {
+          month: "long",
+          day: "numeric",
+          year: "numeric",
+        });
+
+      // // Get current visitor count from localStorage or set to 0
+      // var liveVisitorsCount =
+      //   parseInt(localStorage.getItem("liveVisitorsCount")) || 0;
+
+      // // Update live visitors count on the page
+      // document.getElementById("liveVisitors").innerHTML = liveVisitorsCount;
+
+      // // Increase the visitor count by 1 and update localStorage
+      // liveVisitorsCount++;
+      // localStorage.setItem("liveVisitorsCount", liveVisitorsCount);
+    </script>
+  </body>
+</html>

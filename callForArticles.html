@@ -23,7 +23,6 @@
     <!-- Custom CSS -->
     <style>
       body {
-        padding-top: 56px;
         font-family: "Times New Roman", Times, serif;
       }
 
@@ -105,8 +104,8 @@
       }
 
       .logo {
-        min-width: 200px; /* Adjust the pixel value as needed for medium size */
-        min-height: 200px;
+        width: 200px;
+        height: auto;
       }
     </style>
   </head>
@@ -114,29 +113,30 @@
     <!-- Upper Header -->
     <div class="upper-header">
       <div class="social-links">
-        <span id="currentDate"></span> |
-        <a href="https://www.facebook.com/adhivakta.parishad.58"
-          >Facebook <i class="fab fa-facebook"></i
-        ></a>
-        |
-        <a href="https://www.instagram.com/adhivaktap"
-          >Instagram <i class="fab fa-instagram"></i
-        ></a>
-        |
-        <a href="https://www.linkedin.com/in/adhivaktap"
-          >LinkedIn <i class="fab fa-linkedin"></i
-        ></a>
-        |
-        <a href="https://www.youtube.com/@AdhivaktaParishad"
-          >YouTube <i class="fab fa-youtube"></i
-        ></a>
-        |
-        <a href="https://twitter.com/AdhivaktaP"
-          >Twitter <i class="fab fa-twitter"></i
-        ></a>
+        <span id="currentDate"></span>
+        <div>
+          <a href="https://www.facebook.com/adhivakta.parishad.58"
+            >Facebook <i class="fab fa-facebook"></i
+          ></a>
+          |
+          <a href="https://www.instagram.com/adhivaktap"
+            >Instagram <i class="fab fa-instagram"></i
+          ></a>
+          |
+          <a href="https://www.linkedin.com/in/adhivaktap"
+            >LinkedIn <i class="fab fa-linkedin"></i
+          ></a>
+          |
+          <a href="https://www.youtube.com/@AdhivaktaParishad"
+            >YouTube <i class="fab fa-youtube"></i
+          ></a>
+          |
+          <a href="https://twitter.com/AdhivaktaP"
+            >Twitter <i class="fab fa-twitter"></i
+          ></a>
+        </div>
       </div>
     </div>
-
     <!-- Logo Container -->
     <div class="logo-container">
       <div class="container">
@@ -144,8 +144,13 @@
           <div class="col-md-3 text-center">
             <img src="images/logo.png" alt="Logo 1" class="img-fluid logo" />
           </div>
-          <div class="col-md-3 text-center">
-            <img src="images/logo101.png" alt="Logo 2" class="img-fluid logo" />
+          <div class="col-md-6 text-center">
+            <img
+              src="images/logo101.png"
+              style="width: 600px !important"
+              alt="Logo 2"
+              class="img-fluid logo"
+            />
           </div>
           <div class="col-md-3 text-center">
             <img
@@ -193,6 +198,7 @@
       </div>
     </nav>
 
+    <!-- Body Content -->
     <!-- Body Content -->
     <!-- Body Content -->
     <div
@@ -443,7 +449,6 @@
       </div>
       <!-- Repeat the modal structure for images 2 to 6, changing the IDs, labels, and image paths accordingly -->
     </div>
-
     <!-- Footer -->
     <div class="footer">
       <div class="container">
