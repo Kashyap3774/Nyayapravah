@@ -107,6 +107,142 @@
         width: 200px;
         height: auto;
       }
+
+      /* Editorial Board Styles: */
+      .demo {
+        background-color: #e7e7e7;
+      }
+      .main-timeline {
+        font-family: "Titillium Web", sans-serif;
+        padding: 50px 0 0;
+        position: relative;
+      }
+      .main-timeline:before {
+        content: "";
+        background-color: #fff;
+        height: 100%;
+        width: 60%;
+        box-shadow: 0 0 10px #333;
+        transform: translateX(-50%);
+        position: absolute;
+        left: 50%;
+        top: 10px;
+      }
+      .main-timeline .timeline {
+        margin: -42px 0 0 0;
+        position: relative;
+        z-index: 1;
+      }
+      .main-timeline .timeline:before {
+        content: "";
+        border: 20px solid #ff9b00;
+        height: 90%;
+        width: 50%;
+        border-radius: 100px;
+        position: absolute;
+        left: 12%;
+        top: 22px;
+        z-index: -1;
+      }
+      .main-timeline .timeline-content {
+        background-color: #fff;
+        text-align: center;
+        width: 60%;
+        padding: 10px 15px 60px;
+        margin: 0 auto;
+        display: block;
+      }
+      .main-timeline .timeline-content:hover {
+        text-decoration: none;
+      }
+      .main-timeline .timeline-year {
+        color: #ff9b00;
+        font-size: 30px;
+        font-weight: 600;
+        margin: 0 0 10px;
+      }
+      .main-timeline .title {
+        color: #333;
+        font-size: 25px;
+        font-weight: 600;
+        text-transform: uppercase;
+        margin: 0;
+      }
+      .main-timeline .title:after {
+        content: "";
+        background-color: #ff9b00;
+        height: 3px;
+        width: 60px;
+        margin: 12px auto;
+        display: block;
+      }
+      .main-timeline .description {
+        color: #333;
+        font-size: 14px;
+        letter-spacing: 1px;
+      }
+      .main-timeline .timeline:nth-child(even):before {
+        left: auto;
+        right: 12%;
+      }
+      .main-timeline .timeline:nth-child(4n + 2):before {
+        border-color: #ff503b;
+      }
+      .main-timeline .timeline:nth-child(4n + 2) .timeline-year {
+        color: #ff503b;
+      }
+      .main-timeline .timeline:nth-child(4n + 2) .title:after {
+        background-color: #ff503b;
+      }
+      .main-timeline .timeline:nth-child(4n + 3):before {
+        border-color: #009ce6;
+      }
+      .main-timeline .timeline:nth-child(4n + 3) .timeline-year {
+        color: #009ce6;
+      }
+      .main-timeline .timeline:nth-child(4n + 3) .title:after {
+        background-color: #009ce6;
+      }
+      .main-timeline .timeline:nth-child(4n + 4):before {
+        border-color: #b160bd;
+      }
+      .main-timeline .timeline:nth-child(4n + 4) .timeline-year {
+        color: #b160bd;
+      }
+      .main-timeline .timeline:nth-child(4n + 4) .title:after {
+        background-color: #b160bd;
+      }
+      @media only screen and (max-width: 990px) {
+        .main-timeline .timeline:before {
+          left: 5%;
+          border-radius: 120px;
+        }
+        .main-timeline .timeline:nth-child(even):before {
+          right: 5%;
+        }
+      }
+      @media only screen and (max-width: 576px) {
+        .main-timeline:before {
+          width: 85%;
+        }
+        .main-timeline .timeline {
+          margin: -38px 0 0 0;
+        }
+        .main-timeline .timeline:before {
+          border-width: 8px;
+          border-radius: 0;
+          left: 0;
+        }
+        .main-timeline .timeline:nth-child(even):before {
+          right: 0;
+        }
+        .main-timeline .timeline-content {
+          width: 85%;
+        }
+        .main-timeline .title {
+          font-size: 18px;
+        }
+      }
     </style>
   </head>
   <body>
@@ -199,96 +335,152 @@
     </nav>
 
     <!-- Body Content -->
-    <div
-      class="body-container"
-      style="display: flex; flex-direction: column; align-items: center"
-    >
-      <h2 style="text-align: center">
-        ISSN NO.: 2582-1733
-        <hr />
-        Vol. XXII Issue 88 October-December-2023
-      </h2>
+    <!-- Editorial content: Dec 2023 -->
+    <!-- Body Content -->
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="main-timeline">
+            <div class="timeline">
+              <div class="timeline-content">
+                <div class="timeline-year">
+                  <span
+                    ><u><strong>Editorial Board</strong></u></span
+                  >
+                  <hr />
+                </div>
+                <h3 class="title">ISSN NO.: 2582-1733</h3>
+                <p class="description">
+                  Vol. XXII Issue 88 October-December-2023
+                </p>
+              </div>
+            </div>
+            <div class="timeline">
+              <div class="timeline-content">
+                <div class="timeline-year">
+                  <span>EDITOR</span>
+                </div>
+                <h3 class="title">K. Srinivasa Murthy</h3>
+                <p class="description">
+                  Senior Advocate, Andhra Pradesh High Court
+                </p>
+              </div>
+            </div>
 
-      <div style="text-align: center; width: 70%">
-        <h3>EDITOR</h3>
-        <h4>K. Srinivasa Murthy</h4>
-        <p>Senior Advocate, Andhra Pradesh High Court</p>
-        <hr />
+            <div class="timeline">
+              <div class="timeline-content">
+                <div class="timeline-year">
+                  <span>SUB-EDITOR</span>
+                </div>
+                <h3 class="title">Vinay P. Navare</h3>
+                <p class="description">
+                  Senior Advocate, Supreme Court of India
+                </p>
+              </div>
+            </div>
 
-        <h3>SUB-EDITOR</h3>
-        <h4>Vinay P. Navare</h4>
-        <p>Senior Advocate, Supreme Court of India</p>
-        <hr />
+            <div class="timeline">
+              <div class="timeline-content">
+                <div class="timeline-year">
+                  <span>ASSISTANT EDITOR</span>
+                </div>
+                <h3 class="title">Santosh Kumar</h3>
+                <p class="description">Advocate, Supreme Court of India</p>
+              </div>
+            </div>
 
-        <h3>ASSISTANT EDITOR</h3>
-        <h4>Santosh Kumar</h4>
-        <p>Advocate, Supreme Court of India</p>
-        <hr />
+            <div class="timeline">
+              <div class="timeline-content">
+                <div class="timeline-year">
+                  <span>EDITORIAL TEAM</span>
+                </div>
+                <h3 class="title">M.P. Bendre</h3>
+                <p class="description">Advocate, Pune</p>
+                <br />
+                <h3 class="title">Dr. G. Babu</h3>
+                <p class="description">Advocate, Chennai High Court</p>
 
-        <h3>EDITORIAL TEAM</h3>
-        <h4>M.P. Bendre</h4>
-        <p>Advocate, Pune</p>
-        <hr />
-        <h4>Dr. G. Babu</h4>
-        <p>Advocate, Chennai High Court</p>
-        <hr />
-        <h4>Archana P. Dave</h4>
-        <p>Senior Advocate, Supreme Court of India</p>
-        <hr />
-        <h4>Manisha Aggarwal Narain</h4>
-        <p>Advocate, Delhi High Court</p>
-        <hr />
-        <h4>Praneet Pranay</h4>
-        <p>Advocate, Supreme Court of India</p>
-        <hr />
-        <h4>Shubhendu Anand</h4>
-        <p>Advocate, Supreme Court of India</p>
-        <hr />
+                <br />
+                <h3 class="title">Archana P. Dave</h3>
+                <p class="description">
+                  Senior Advocate, Supreme Court of India
+                </p>
 
-        <h3>RESEARCH TEAM</h3>
-        <ul style="list-style-type: none; padding: 0">
-          <li>
-            <h4>Ankita Chaudhary</h4>
-            Advocate
-          </li>
-          <hr />
-          <li>
-            <h4>Ayush Anand</h4>
-            Advocate
-          </li>
-          <hr />
-          <li>
-            <h4>Vedansh Anand</h4>
-            Advocate
-          </li>
-          <hr />
-          <li>
-            <h4>Aditya Kashyap</h4>
-            Advocate
-          </li>
-          <hr />
-        </ul>
+                <br />
+                <h3 class="title">Manisha Aggarwal Narain</h3>
+                <p class="description">Advocate, Delhi High Court</p>
 
-        <h3>EDITORIAL OFFICE</h3>
-        <p>
-          50, Pravasi Bhawan, Deendayal Upadhyaya Marg, New Delhi-110002<br />
-          Ph: 011-23213469<br />
-          Email: <a href="mailto:nyayapravah@gmail.com">nyayapravah@gmail.com</a
-          ><br />
-          <a href="mailto:nyayapravah@rediffmail.com"
-            >nyayapravah@rediffmail.com</a
-          ><br />
-          <a href="http://www.adhivaktaparishad.org" target="_blank"
-            >www.adhivaktaparishad.org</a
-          >
-        </p>
-        <hr />
+                <br />
+                <h3 class="title">Praneet Pranay</h3>
+                <p class="description">Advocate, Supreme Court of India</p>
 
-        <h3>DESIGN & PRODUCTION</h3>
-        <p>D-94, Okhla Industrial Area, Phase-I, New Delhi-110020</p>
-        <hr />
+                <br />
+                <h3 class="title">Shubhendu Anand</h3>
+                <p class="description">Advocate, Supreme Court of India</p>
+              </div>
+            </div>
+
+            <div class="timeline">
+              <div class="timeline-content">
+                <div class="timeline-year">
+                  <span>RESEARCH TEAM</span>
+                </div>
+                <h3 class="title">Ankita Chaudhary</h3>
+                <p class="description">Advocate</p>
+                <br />
+                <h3 class="title">Ayush Anand</h3>
+                <p class="description">Advocate</p>
+
+                <br />
+                <h3 class="title">Vedansh Anand</h3>
+                <p class="description">Advocate</p>
+
+                <br />
+                <h3 class="title">Aditya Kashyap</h3>
+                <p class="description">Advocate</p>
+              </div>
+            </div>
+
+            <div class="timeline">
+              <div class="timeline-content">
+                <div class="timeline-year">
+                  <span>EDITORIAL OFFICE</span>
+                </div>
+                <h3 class="title"></h3>
+                <p class="description">
+                  50, Pravasi Bhawan, Deendayal Upadhyaya Marg, New
+                  Delhi-110002<br />
+                  Ph: 011-23213469<br />
+                  Email:
+                  <a href="mailto:nyayapravah@gmail.com"
+                    >nyayapravah@gmail.com</a
+                  ><br />
+                  <a href="mailto:nyayapravah@rediffmail.com"
+                    >nyayapravah@rediffmail.com</a
+                  ><br />
+                  <a href="http://www.adhivaktaparishad.org" target="_blank"
+                    >www.adhivaktaparishad.org</a
+                  >
+                </p>
+              </div>
+            </div>
+
+            <div class="timeline">
+              <div class="timeline-content">
+                <div class="timeline-year">
+                  <span>DESIGN & PRODUCTION</span>
+                </div>
+                <h3 class="title">Designer</h3>
+                <p class="description">
+                  D-94, Okhla Industrial Area, Phase-I, New Delhi-110020
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
+
     <!-- Footer -->
     <div class="footer">
       <div class="container">
