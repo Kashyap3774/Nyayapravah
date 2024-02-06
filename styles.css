@@ -78,3 +78,8 @@ body {
     background-image: url('images/bg_img.svg');
     /* Other background properties can be added here */
 }
+
+/* pdf rendering for the editorial page(index page) ONLY */
+.embed-responsive-16by9::before {
+    padding-top: none;
+}
