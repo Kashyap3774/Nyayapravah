@@ -73,3 +73,8 @@ iframe {
     margin: auto;
     padding-left: 80px;
 }
+
+body {
+    background-image: url('images/bg_img.svg');
+    /* Other background properties can be added here */
+}
