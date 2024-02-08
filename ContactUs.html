@@ -306,12 +306,12 @@
             var message = document.getElementById("message").value;
 
             // Construct the email body
-            var body = "Name: " + fullName + "\n";
-            body += "Email: " + email + "\n";
-            body += "Mobile Number: " + mobileNumber + "\n";
-            body += "Address: " + address + "\n";
+            var body = "Name: " + fullName + "\n\n";
+            body += "Email: " + email + "\n\n";
+            body += "Mobile Number: " + mobileNumber + "\n\n";
+            body += "Address: " + address + "\n\n";
             body += "Organization: " + organization + "\n\n";
-            body += "**Message:**\n" + message; // Make the message bold
+            body += "Message:" + message;
 
             // Compose the email link
             var subject = "Inquiry for Nyayapravah";
