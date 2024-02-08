@@ -189,32 +189,21 @@
               >Call for Articles</a
             >
           </li>
-          <li class="nav-item active">
+          <li class="nav-item">
             <a class="nav-link" href="ecopy.html">Read Ecopy</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="AboutUs.html">About Us</a>
           </li>
-          <li class="nav-item">
+          <li class="nav-item active">
             <a class="nav-link" href="ContactUs.html">Contact Us</a>
           </li>
         </ul>
       </div>
     </nav>
 
-    <!-- Table design Body Content -->
-    <style>
-      .body-container {
-        text-align: center;
-      }
-
-      .table {
-        margin-left: auto;
-        margin-right: auto;
-      }
-    </style>
-
-    <!-- Style for Top heading = Here "Past Issues" -->
+    <!-- Body Content -->
+    <!-- Style for Top heading = Here "Contact Us" -->
     <div
       style="
         text-align: center;
@@ -231,88 +220,79 @@
           letter-spacing: 2px;
         "
       >
-        Past Issues
+        Get in touch
       </h2>
     </div>
     <br />
-    <!-- Past Issues Table -->
-    <div
-      class="body-container"
-      style="
-        text-align: center;
-        padding: 10px;
-        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
-      "
-    >
-      <!-- <h2>Past Issues</h2> -->
-      <table class="table table-bordered">
-        <thead>
-          <tr>
-            <th>Month</th>
-            <th>Year</th>
-            <th>View</th>
-            <th>Download</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>Dec</td>
-            <td>2023</td>
-            <td>
-              <a href="index.html" class="btn btn-primary">Read</a>
-            </td>
-            <td>
-              <!-- <a href="#" class="btn btn-success">Download</a> -->
-              Upcoming Upload
-            </td>
-          </tr>
-          <tr>
-            <td>Jun</td>
-            <td>2023</td>
-            <td>
-              <a href="ecopy/ecopy_June2023.pdf" class="btn btn-primary"
-                >Read</a
-              >
-            </td>
-            <td>
-              <a href="ecopy/ecopy_June2023.pdf" class="btn btn-success"
-                >Download</a
-              >
-            </td>
-          </tr>
-          <tr>
-            <td>Mar</td>
-            <td>2023</td>
-            <td>
-              <a href="ecopy/ecopy_Mar2023.pdf" class="btn btn-primary">Read</a>
-            </td>
-            <td>
-              <a href="ecopy/ecopy_Mar2023.pdf" class="btn btn-success"
-                >Download</a
-              >
-            </td>
-          </tr>
-          <tr>
-            <td>Dec</td>
-            <td>2022</td>
-            <td>
-              <a href="ecopy/ecopy_Dec2022.pdf" class="btn btn-primary">Read</a>
-            </td>
-            <td>
-              <a href="ecopy/ecopy_Dec2022.pdf" class="btn btn-success"
-                >Download</a
-              >
-            </td>
-          </tr>
-          <!-- Add more rows as needed -->
-        </tbody>
-      </table>
+
+    <!-- Contact Us Form -->
+    <div class="main-content" style="box-shadow: 0 0 10px #333; padding: 20px">
+      <div class="container">
+        <h2 class="text-center mb-4">Contact Us</h2>
+        <form id="contactForm">
+          <div class="form-group">
+            <input
+              type="text"
+              class="form-control"
+              id="fullName"
+              placeholder="Full Name"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <input
+              type="email"
+              class="form-control"
+              id="email"
+              placeholder="Email"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <input
+              type="tel"
+              class="form-control"
+              id="mobileNumber"
+              placeholder="Mobile Number"
+              pattern="[0-9]*"
+            />
+          </div>
+          <div class="form-group">
+            <input
+              type="text"
+              class="form-control"
+              id="address"
+              placeholder="Address"
+            />
+          </div>
+          <div class="form-group">
+            <input
+              type="text"
+              class="form-control"
+              id="organization"
+              placeholder="Organization"
+            />
+          </div>
+          <div class="form-group">
+            <textarea
+              class="form-control"
+              id="message"
+              rows="5"
+              placeholder="Message"
+              required
+            ></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary btn-block">
+            Send Message
+          </button>
+        </form>
+      </div>
     </div>
     <br />
+
     <!-- Footer -->
     <div class="footer">
       <div class="container">
-        <!-- <p>Visitors Count: <span id="liveVisitors">0</span></p> -->
         <p>
           <a href="#">Privacy Policy</a> | &copy; 2024 Nyayapravah || Adhivakta
           Parishad
@@ -339,17 +319,6 @@
           day: "numeric",
           year: "numeric",
         });
-
-      // // Get current visitor count from localStorage or set to 0
-      // var liveVisitorsCount =
-      //   parseInt(localStorage.getItem("liveVisitorsCount")) || 0;
-
-      // // Update live visitors count on the page
-      // document.getElementById("liveVisitors").innerHTML = liveVisitorsCount;
-
-      // // Increase the visitor count by 1 and update localStorage
-      // liveVisitorsCount++;
-      // localStorage.setItem("liveVisitorsCount", liveVisitorsCount);
     </script>
   </body>
 </html>
