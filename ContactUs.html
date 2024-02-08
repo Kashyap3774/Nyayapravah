@@ -310,13 +310,13 @@
             body += "Email: " + email + "\n";
             body += "Mobile Number: " + mobileNumber + "\n";
             body += "Address: " + address + "\n";
-            body += "Organization: " + organization + "\n";
-            body += "Message: " + message;
+            body += "Organization: " + organization + "\n\n";
+            body += "**Message:**\n" + message; // Make the message bold
 
             // Compose the email link
-            var subject = "New Contact Us Message";
+            var subject = "Inquiry for Nyayapravah";
             var emailLink =
-              "mailto:nayapravah@gmail.com" +
+              "mailto:nyayapravah@gmail.com" +
               "?subject=" +
               encodeURIComponent(subject) +
               "&body=" +
