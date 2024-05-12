@@ -82,5 +82,5 @@ body {
 
 /* pdf rendering for the editorial page(index page) ONLY */
 .embed-responsive-16by9::before {
-    padding-top: none;
+    padding-top: 0% !important;
 }
